@@ -295,3 +295,148 @@ body{
     grid-template-columns:1fr;
   }
 }
+/* Meet The Host */
+.host{
+  background:#1c0830;
+  padding:90px 0;
+}
+
+.host h2{
+  text-align:center;
+  color:#fff;
+  font-size:34px;
+  font-weight:800;
+  margin-bottom:40px;
+}
+
+/* card */
+.host-card{
+  max-width:1000px;
+  margin:0 auto;
+  padding:28px 32px;
+  background:#35125a;
+  border-radius:18px;
+
+  display:flex;
+  align-items:center;
+  gap:28px;
+}
+
+/* image */
+.host-img img{
+  width:110px;
+  height:110px;
+  border-radius:50%;
+  object-fit:cover;
+  border:3px solid #ff3bd4;
+}
+
+/* text */
+.host-info h3{
+  color:#fff;
+  font-size:20px;
+  font-weight:800;
+  margin-bottom:10px;
+}
+
+.host-info p{
+  color:rgba(255,255,255,.75);
+  font-size:13px;
+  line-height:1.7;
+  margin-bottom:16px;
+  max-width:680px;
+}
+
+/* social icons */
+.host-social{
+  display:flex;
+  gap:12px;
+}
+
+.host-social a{
+  width:32px;
+  height:32px;
+  border-radius:50%;
+  background:#2a0e4a;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  transition:.3s;
+}
+
+.host-social a:hover{
+  background:#ff3bd4;
+}
+
+.host-social img{
+  width:16px;
+  height:16px;
+}
+
+/* responsive */
+@media(max-width:768px){
+  .host-card{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .host-info p{
+    max-width:100%;
+  }
+
+  .host-social{
+    justify-content:center;
+  }
+}
+.footer{
+  background:#140627 url("B13-A02-TechWave/assets/footer-bg.png") center/cover no-repeat;
+  padding:90px 0 70px;
+  text-align:center;
+}
+
+.footer-inner{max-width:1100px;margin:auto;padding:0 20px;}
+
+.footer-logo{
+  font-size:64px;
+  font-weight:900;
+  color:#fff;
+  margin:0 0 18px;
+}
+.footer-logo span{
+  background:linear-gradient(90deg,#ffcc00,#ff2bd6,#7c3cff);
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+}
+
+.footer-links{
+  margin-top:10px;
+  display:flex;
+  gap:34px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+.footer-links a{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  color:rgba(255,255,255,.75);
+  text-decoration:none;
+  font-size:14px;
+}
+
+.footer-links img{width:18px;height:18px;}
+
+.footer-copy{
+  margin-top:26px;
+  color:rgba(255,255,255,.55);
+  font-size:13px;
+}
+
+/* mobile */
+@media(max-width:576px){
+  .footer-logo{font-size:46px;}
+  .footer{padding:70px 0 55px;}
+  .footer-links{gap:18px;}
+}
