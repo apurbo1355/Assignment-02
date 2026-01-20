@@ -1,0 +1,127 @@
+body{
+  background:#12061f;
+  margin:0;
+}
+.nav{
+  background: #12061f;
+  border-bottom: 1px solid rgba(255,255,255,.1);
+}
+
+.nav-inner{
+  max-width: 1100px;
+  margin:auto;
+  padding:18px 20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo{
+  font-size:28px;
+  font-weight:800;
+  color:#fff;
+}
+.logo .pink{ color:#ff2bd6; }
+
+.menu{
+  display:flex;
+  gap:30px;
+}
+.menu a{
+  color:#ccc;
+  font-size:14px;
+  text-decoration: none;
+}
+.menu a:hover{ color:#fff; }
+
+.btn{
+  padding:10px 22px;
+  border-radius:999px;
+  font-size:14px;
+  font-weight:700;
+  color:#fff;
+  background: linear-gradient(90deg,#ffcc00,#ff2bd6,#7c3cff);
+  text-decoration: none;
+}
+.hero{
+  background:url("B13-A02-TechWave\assets\hero-bg.png") center/cover no-repeat;
+  padding:90px 0 70px;
+  text-align:center;
+}
+
+/* circle block */
+.circle{
+  width:220px;height:220px;
+  margin:0 auto;
+  position:relative;
+}
+.c-bg{
+  width:100%;height:100%;
+  border-radius:50%;
+}
+.mic{
+  width:80px;height:120px;
+  position:absolute;
+  top:50%;left:50%;
+  transform:translate(-50%,-50%);
+}
+
+/* NEW badge */
+.new{
+  position:absolute;
+  top:18px;right:-12px;
+  background:#00ffc8;
+  color:#0b0316;
+  font-weight:800;
+  font-size:12px;
+  padding:6px 12px;
+  border-radius:999px;
+}
+
+/* text + buttons */
+.h-title{font-size:56px;font-weight:800;margin-top:25px;color: white;}
+.h-sub{color:rgba(255,255,255,.7);font-size:14px;margin-top:10px;color: white;}
+
+.h-btns{
+  margin-top:22px;
+  display:flex;
+  justify-content:center;
+  gap:14px;
+}
+.b1{
+  padding:12px 26px;border-radius:999px;
+  background:linear-gradient(90deg,#ffcc00,#ff2bd6);
+  color:#14062a;font-weight:700;
+  text-decoration: none;
+}
+.b2{
+  padding:12px 26px;border-radius:999px;
+  border:1px solid #00ffc8;
+  color:#fff;font-weight:700;
+  display:flex;align-items:center;gap:8px;
+  text-decoration: none
+}
+.b2 span{
+  width:10px;height:10px;border-radius:50%;
+  background:#00ffc8;
+}
+
+/* ABOUT */
+.about{ text-align:center; padding:60px 0 30px; }
+.about h2{ font-size:42px; font-weight:800; }
+.a-text{
+  margin-top:14px;
+  font-size:13px;
+  color:rgba(255,255,255,.7);
+  line-height:1.8;
+}
+
+/* mobile */
+@media(max-width:576px){
+  .hero{padding:60px 0 50px;}
+  .circle{width:150px;height:150px;}
+  .mic{width:65px;height:65px;}
+  .h-title{font-size:38px;}
+  .about h2{font-size:32px;}
+  .h-btns{flex-direction:column; align-items:center;}
+}
